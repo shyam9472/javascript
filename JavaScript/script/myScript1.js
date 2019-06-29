@@ -123,44 +123,43 @@ window.onload = function() {
 var z = document.getElementById("ye_wala");
 var a = document.getElementById("ye_wala_button");
 
-// var x = document.getElementById("clickIt"); 
-// var y = document.getElementById("hoverPara"); 
+var x = document.getElementById("ye_wala_button"); 
+var y = document.getElementById("ye_wala"); 
 
- 
+y.addEventListener("click", ClickOnPara) 
 z.addEventListener("mouseover", RespondMouse); 
-a.addEventListener("click",ResponseLoad);
-// x.addEventListener("click", RespondClick); 
-// y.addEventListener("mouseover", RespondMouseOver); 
-// y.addEventListener("mouseout", RespondMouseOut); 
+x.addEventListener("click", RespondPClick);
+x.addEventListener("click", RespondClick); 
+y.addEventListener("mouseover", RespondMouseOver); 
+y.addEventListener("mouseout", RespondMouseOut); 
 }
 
-function ResponseLoad(){
-        console.log("chlna toh chiye");
-        document.getElementById("ye_wala").innerHTML = "Ab to naya wala text print hoga";
+function ClickOnPara(){
+        document.getElementById("ye_wala").innerHTML +="<br>This will be added"+
+        "when you click on para"
 }
 
 function RespondMouse(){
-        console.log("Ho gaya bhiya");
-        console.log("ab ki baar \"Modi\" sarkar");
         console.log("What happens when we divide 1\\0")
-        // document.getElementById("ye_wala").innerHTML = "ab ki baar \"Modi\" sarkar";
-        // alert("ab toh chal jaaaa");
 }
 
+function RespondPClick(){
+        document.getElementById("ye_wala").innerHTML += "<br>This text will "+
+        "be added when ever you click on button" 
+}
 
+  
+function RespondMouseOver() { 
+        document.getElementById("effect").innerHTML += 
+        "MouseOver Event" + "<br>"; 
+} 
 
+function RespondMouseOut() { 
+        document.getElementById("effect").innerHTML += 
+                "MouseOut Event" + "<br>"; 
+} 
   
-        function RespondMouseOver() { 
-            document.getElementById("effect").innerHTML += 
-                       "MouseOver Event" + "<br>"; 
-        } 
-  
-        function RespondMouseOut() { 
-            document.getElementById("effect").innerHTML += 
-                      "MouseOut Event" + "<br>"; 
-        } 
-  
-        function RespondClick() { 
-            document.getElementById("effect").innerHTML += 
-                      "Click Event" + "<br>"; 
-        } 
+function RespondClick() { 
+        document.getElementById("effect").innerHTML += 
+        "Click Event" + "<br>"; 
+} 

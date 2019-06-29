@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+}
+
+.logo h4{
+    font-family: 'lobster', cursive;
+    font-size: 50px;
+    color:#77ddff;
+    padding-left: 20px;
+    margin:-20px 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    margin: 0px;
+    
+}
+
+.h-wrap, nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    height: inherit;
+}
+
+
+
+nav li {
+    padding: 0px 15px;
+    list-style-type: none;
+    margin: 15px 0;
+    
+}
+
+
+nav ul li a, .logo a{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a {
+        padding: 10px 15px;
+        display: inline-block;
+}
+
+nav ul li a:hover {
+    color: #77ddff;
+    background: #00000021;
+}
+
+.sec-hero {
+    background-image: url("hero-banner'.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.sec-hero::after{
+    content: "";
+    position: absolute;
+    height: 60vh;
+    width: 100%;
+    background: #6bc1d8;
+    opacity: 0.5;
+}
+.sec-h-wrap {
+    text-align: center;
+    justify-content: center;
+    padding: 80px 0;
+    margin-top: -100px;
+}
+.sec-h-wrap p{
+    padding-bottom: 50px;
+    font-size: 20px;
+    margin-left: 25%;
+    text-align: center;
+    max-width: 300px;
+}
+.container {
+    color: #fff;
+    text-decoration: none;
+    z-index :1;
+}
+.btn-custom {
+    color : #fff;
+    text-decoration: none;
+    width: 100%;
+    padding: 5px;
+    border : 2px solid;
+    border-radius: 8px;
+    margin: 200px 0;
+}
+.sec-h-wrap h2 {
+    font-size: 50px;
+}
+
+
+.service-item {
+    margin: 50px 0px;
+    border-radius:5px; 
+    padding: 15px;
+    background: #fff;
+    color: black;
+    position: relative;
+    transition: 300ms all;
+    overflow: hidden;
+}
+
+.service-item p{
+    margin-bottom: 50px;
+}
+
+.service-item i{
+    font-size: 200%;
+    color: #48e5b0;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    /* text-align: center; */
+    border: 1px solid;
+    border-radius: 50px;
+    transition: 300ms all;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    max-width: 0 0 25%;
+    flex: 0 0 25%;
+    margin-bottom: 20px;
+}
+
+.sec-s-wrap {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.btn-custom1 {
+    background-color : #48e5b0;
+    color:#fff;
+    text-decoration: none;
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 200px 0;
+}
+ 
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:7px
+} 
+.col1{
+    max-width: 0 0 20%;
+    flex: 0 0 20%;
+    margin-bottom: 20px;
+}
+
+.sec-services2 {
+    margin: 0px;
+    width: 100%;
+    background:#f8f8f8;
+}
+
+
+.service-item1{
+    margin: 0px 17px;
+    /* border-radius:2px;  */
+    width:300px;
+    padding: 0px;
+    color: rgba(255, 255, 255, 0.611764705882353);
+    position: relative;
+    transition: 300ms all;
+    overflow: hidden;
+}
+
+.sec-services2 h4 {
+    text-align: center;
+    padding-top: 30px; 
+    font-size:50px;
+}
+
+.container2{
+    /* margin-top: 20px; */
+    margin-left: 10%;
+    width: 80%;
+    padding-top: 30px
+}
+
+.btn-custom2 {
+    background-color : #48e5b0;
+    font-size: 185%;
+    color:#fff;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 380px;
+    margin-right: 420px; 
+    margin-top: 30px;
+    margin-bottom:50px;
+}
+h5.main-heading {
+    font-size: 50px;
+    color: black;
+}
+
+.service-item2 {
+    margin: 50px 0px;
+    border-radius:5px; 
+    padding: 15px;
+    background: #fff;
+    color: black;
+    position: relative;
+    transition: 300ms all;
+    overflow: hidden;
+}
+.service-item2 h3{
+    font-size:25px;
+    margin-bottom: -20px;
+}
+
+.service-item2 p{
+    margin-bottom: 50px;
+}
+
+.service-item2 i{
+    font-size: 600%;
+    color: black;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 200px;
+    line-height: 180px;
+    /* text-align: center; */
+    border: 1px solid;
+    border-radius: 250px;
+    transition: 300ms all;
+}
+
+.foot {
+    background: url("footer.jpg");
+    
+}
+
+.foot h1{
+    font-size: 50px;
+    text-align: center;
+    color:#fff
+}
+
+.f-wrap {
+    display:flex;
+    justify-content: space-between;
+}
+
+.right {
+    width:40%;
+    margin-left:30px;
+}
+
+
+
+.loginForm {
+    margin-right: 80px;
+}

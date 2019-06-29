@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id = "printHere"></p>
+    </body>
+    <script>
+        var obj = {
+            "emp" : [{
+                name : "shyam",
+                emp_Id : "1910"
+            },{
+                name : "sarthak",
+                emp_Id : "1919"
+            }]
+        };
+        console.log(obj.emp[0]);
+        var s ="";
+        obj.emp.forEach(function(element){
+            s += element.name;
+            s +=" ";
+            s += element.emp_Id;
+            s +=" ";
+        });
+        document.getElementById("printHere").innerHTML = s;
+        
+    </script>
+</html>

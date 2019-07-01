@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="text" name="String" id="input" placeholder="Enter the string here">
+        <button type="button" onclick="callMe()">Click This</button>
+        <p id="printHere"></p>
+    </body>
+
+    <script>
+
+        window.onload = function(){
+            var date = new Date()
+            console.log(date.getMonth())
+            console.log(typeof date)
+        }
+        
+        function AddString(name) {
+            this.string = name;
+        }
+
+        // var getString;
+        function callMe() {
+        var getString = new AddString(document.getElementById("input").value);
+        // getString = document.getElementById("input").value;
+        console.log("1");
+        // var a = "shyam"
+        document.getElementById("printHere").innerHTML = getString.slice();
+        }
+
+        AddString.prototype.slice = function() {
+            // console.log("2")
+            // console.log(this.string.length)
+            var count = 1;
+            var res="";
+            // console.log(this.string.slice(0,this.string.length));
+            for(var i = 0 ; i<count ; i++){
+                for(var j = 0 ; j < this.string.length; j++){
+                    res += this.string.slice(j,j+count);
+                    res +="<br>"
+                }
+                count++;
+                if(count == this.string.length){
+                    break;
+                }
+            }
+            return res;
+        }
+
+        
+        
+    </script>
+</html>
